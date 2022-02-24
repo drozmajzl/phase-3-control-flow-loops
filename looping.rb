@@ -1,5 +1,13 @@
+
 def happy_new_year
-  # your code here
+  i = 10
+  while i != 0
+    puts i 
+    i -= 1
+    end
+    if i == 0
+        puts "Happy New Year!"
+    end
 end
 
 # No need to modify this code! Use this to implement the fizzbuzz_printer method.
@@ -16,9 +24,28 @@ def fizzbuzz(num)
 end
 
 def fizzbuzz_printer
-  # your code here
+  num = 1
+  while num != 101
+    puts fizzbuzz(num)
+    num += 1
+  end
 end
 
 def reverse_string(str)
-  # your code here
+  i = str.length - 1
+  reversed = ""
+  while i != -1
+    reversed = reversed + str[i]
+    puts reversed
+    i -= 1
+  end
+  reversed
 end
+
+# function reverseString(str) {
+#   let reversedStr = "";
+#   for (let i = 0; i < str.length; i++) {
+#     reversedStr = str[i] + reversedStr;
+#   }
+#   return reversedStr;
+# }
